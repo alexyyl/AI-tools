@@ -3,53 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Repositories</title>
+    <title>AI Tools Directory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
         }
         .container {
-            background-color: #fff;
+            max-width: 1000px;
+            margin: auto;
             padding: 20px;
+        }
+        .card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .button {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 12px 18px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #007BFF;
             font-weight: bold;
+            transition: background 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background: #2563eb;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Useful AI Repositories</h1>
-        <ul>
-            <li><a href="https://notebooklm.google.com/" target="_blank">Google NotebookLM</a></li>
-            <li><a href="https://aistudio.google.com/prompts/new_chat">Google AI Studio</li>
-            <!-- Add more links to AI repositories here -->
-        </ul>
+    <nav class="text-center py-6 text-2xl font-bold bg-opacity-10 backdrop-blur-lg">🚀 AI Tools Hub</nav>
+    
+    <div class="container text-center">
+        <h1 class="text-4xl font-bold mb-4">Explore the Best AI Tools</h1>
+        <p class="text-lg text-gray-400">Find top AI tools to enhance your workflow.</p>
+    </div>
+    
+    <div class="container mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card text-center">
+            <h2 class="text-xl font-semibold">🤖 AI Assistants</h2>
+            <a href="https://openai.com/chatgpt/" class="button mt-4 block">ChatGPT</a>
+            <a href="https://www.perplexity.ai/" class="button mt-2 block">Perplexity AI</a>
+        </div>
+        
+        <div class="card text-center">
+            <h2 class="text-xl font-semibold">✍️ Writing & Content</h2>
+            <a href="https://www.grammarly.com/" class="button mt-4 block">Grammarly</a>
+            <a href="https://www.copy.ai/" class="button mt-2 block">Copy.ai</a>
+            <a href="https://scite.ai/" class="button mt-2 block">Scite AI</a>
+            <a href="https://elicit.org/" class="button mt-2 block">Elicit</a>
+        </div>
+        
+        <div class="card text-center">
+            <h2 class="text-xl font-semibold">🎨 Design & Media</h2>
+            <a href="https://www.canva.com/ai/" class="button mt-4 block">Canva AI</a>
+            <a href="https://runwayml.com/" class="button mt-2 block">Runway ML</a>
+        </div>
+        
+        <div class="card text-center">
+            <h2 class="text-xl font-semibold">💻 Coding & Dev</h2>
+            <a href="https://github.com/features/copilot" class="button mt-4 block">GitHub Copilot</a>
+            <a href="https://makersuite.google.com/" class="button mt-2 block">Google AI Studio</a>
+            <a href="https://notebooklm.google/" class="button mt-2 block">Notebook LM</a>
+        </div>
     </div>
 </body>
 </html>
